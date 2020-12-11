@@ -3,7 +3,6 @@ package ru.geekbrains;
 import ru.geekbrains.persist.ToDo;
 import ru.geekbrains.persist.ToDoRepository;
 
-import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;

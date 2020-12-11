@@ -1,7 +1,6 @@
 package ru.geekbrains;
 
 import java.io.Serializable;
-import java.time.LocalDate;
 
 public class ToDoRepr implements Serializable {
 

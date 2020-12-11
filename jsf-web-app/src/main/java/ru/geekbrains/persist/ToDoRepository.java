@@ -3,7 +3,6 @@ package ru.geekbrains.persist;
 import ru.geekbrains.service.ToDoRepr;
 
 import javax.ejb.Local;
-import javax.ejb.TransactionAttribute;
 import java.util.List;
 
 @Local

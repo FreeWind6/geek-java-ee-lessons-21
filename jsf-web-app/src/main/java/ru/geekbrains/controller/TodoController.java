@@ -1,15 +1,18 @@
 package ru.geekbrains.controller;
 
-import ru.geekbrains.persist.*;
+import ru.geekbrains.persist.ToDoCategory;
+import ru.geekbrains.persist.ToDoCategoryRepository;
 import ru.geekbrains.service.CartService;
 import ru.geekbrains.service.ToDoRepr;
 import ru.geekbrains.service.ToDoServiceLocal;
 
 import javax.ejb.EJB;
 import javax.enterprise.context.SessionScoped;
+import javax.faces.context.FacesContext;
 import javax.faces.event.ComponentSystemEvent;
 import javax.inject.Inject;
 import javax.inject.Named;
+import javax.servlet.http.HttpSession;
 import java.io.Serializable;
 import java.util.List;
 
@@ -74,5 +77,10 @@ public class TodoController implements Serializable {
 
     public List<ToDoCategory> getToDoCategories() {
         return toDoCategories;
+    }
+
+    public String logout() {
+        ((HttpSession) FacesContext.getCurrentInstance().getExternalContext().getSession(false)).invalidate();
+        return "/index.xhtml?faces-redirect=true";
     }
 }

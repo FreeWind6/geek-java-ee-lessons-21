@@ -13,9 +13,9 @@ import javax.ejb.Asynchronous;
 import javax.ejb.Stateless;
 import javax.ejb.TransactionAttribute;
 import javax.inject.Inject;
+import javax.jws.WebService;
 import java.util.List;
 import java.util.concurrent.Future;
-import javax.jws.*;
 
 @Stateless
 @WebService(endpointInterface = "ru.geekbrains.service.ToDoServiceWs", serviceName="ToDoService")

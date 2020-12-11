@@ -3,7 +3,6 @@ package ru.geekbrains.persist;
 import ru.geekbrains.service.ToDoRepr;
 
 import javax.ejb.Stateless;
-import javax.ejb.TransactionAttribute;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import java.util.List;

@@ -1,6 +1,7 @@
 package ru.geekbrains.service;
 
-import javax.jws.*;
+import javax.jws.WebMethod;
+import javax.jws.WebService;
 import java.util.List;
 
 @WebService

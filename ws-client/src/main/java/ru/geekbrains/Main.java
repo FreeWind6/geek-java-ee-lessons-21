@@ -1,7 +1,6 @@
 package ru.geekbrains;
 
 import java.net.MalformedURLException;
-import java.net.URL;
 
 //import ru.geekbrains.service.*;
 
